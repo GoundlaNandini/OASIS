@@ -1,61 +1,90 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-image: url(port.jpg);
-    background-position: center;
-    background-size: cover;
-    }
-
-header {
-    
-    color: white;
-    text-align: center;
-    padding: 40px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
 }
-h2 {
+
+:root{
+    --text:1.5rem;
+    --head:calc(1rem + 5vw);
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.hero-section
+{
+    min-height: 100vh;
+   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(ilya-mashkov-mkVa2hLJgnI-unsplash.jpg);
+   /* position: absolute; */
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+.navbar
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:10vh;
+    padding: 0rem 1.5rem;
+    color: #fff;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li {
+    display: inline-block;
+    margin-left: 3rem;
+    font-size: var(--text);
+    color: #fff;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.hero-text{
     color:white;
+    height:90vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.projects {
-    padding-top: 20px;
+.hero-text h2{
+    text-align: center;
+    font-size: 4rem;
+}
+.hero-text p{
+    font-size: 1.8rem;
+}
+button{
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid gold;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
     position: absolute;
-    top: 25%;
-    left: 75%;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 70%;
 }
-.about{
-    padding-top: 20px;
+span{
+    background: gold;
+    height: 100%;
+    width:0;
+    border-radius: 25px;
     position: absolute;
-    top: 25%;
-    left: 2%;
+    transition: 0.5s;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
 }
-p{
-    color: white;
+button:hover span{
+width:100%;
 }
-.pro h3{
-    color: white;
-} 
-
-.pro2 h3{
-    color: white;
-}
-.project img {
-    max-width: 100%;
-    border-radius: 5px;
-    margin-bottom: 1em;
-}
-.Contact {
-    color: white;
-    position: absolute;
-    top: 40%;
-    left: 2%;
-}
-.Contact p1{
-    color: white;
-}
-.cl{
-     color: white;
-     position: absolute;
-     top: 90%;
-     text-align: center;
-     left: 43%;
-}
-
-
